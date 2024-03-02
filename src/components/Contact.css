@@ -1,0 +1,145 @@
+.contact__page{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to top, #c7c4c4 0%, #dcdddf 52%, #b9f4f2 100%);
+
+}
+
+.contact__page h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align:center ;
+    color: #646363;
+    position: relative;
+}
+.contact__page h1::after{
+    content: '';
+    width: 185px;
+    height: 3px;
+    background: #6e8ab5;
+    position: absolute;
+    bottom: -6px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact__page h1::before , .contact__page h1::after{
+    content: '';
+}
+
+.contact__page p{
+    margin: 15px auto;
+    color: gray;
+
+}
+
+.contact__div{
+    display: flex;
+    /* justify-content: center; */
+    /* text-align: center; */
+
+}
+
+.contact__icon__section{
+    flex: 1;
+    /* justify-content: center; */
+    
+}
+.contact__icon__section h2{
+    font-family: 'poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    color: rgb(130, 127, 127);
+
+}
+
+.icon__container{
+
+}
+
+
+.contact__write__section{
+    flex: 1;
+}
+.contact__write__section h2{
+    font-family: 'poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px auto;
+    color: rgb(130, 127, 127);
+    /* display: block; */
+    /* justify-content: center; */
+
+}
+
+
+.contact__input__div{
+    margin: 40px auto;
+    /* margin-top: 0; */
+    position: relative;
+    margin-bottom: 10px;
+    height: 4rem;
+    width: 400px;
+    /* justify-content: center; */
+    width: 50%;
+    min-width: 100px;
+
+}
+
+.contact__input__div input{
+    position: absolute;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    border: 2px solid rgb(163, 162, 162);
+    background: none;
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+    color: #513131;
+}
+.contact__input__div textarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(163, 162, 162);
+    background: none;
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+    height: 150px;
+    resize: none;
+    color: #513131;
+}
+.contact__input__div label{
+    position: absolute;
+    top: -1.5rem;
+    left: 1.25rem;
+    font-size: medium;
+    padding: 0.25rem;
+    z-index: 20;
+    background-color: var(--body-color);
+    /* background-color: #fff;
+    background-color: inherit; */
+}
+.send__message__button{
+    margin-top: 130px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #646363; */
+}
+.send__message__button button{
+    
+    /* position: absolute; */
+    margin: auto;
+}

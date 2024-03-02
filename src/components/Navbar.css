@@ -1,0 +1,49 @@
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: large;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    position:fixed;
+    top: 0; left: 0; right: 0;
+    background-color: rgb(243, 244, 245);
+    z-index: 100;
+}
+.leftPart{
+    flex: 1;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 30px ;
+}
+.rightPart{
+    flex: 3;
+    /* margin-left: 1000px; */
+}
+
+
+ul{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.leftPart a{
+    text-decoration: none;
+    color: black;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.item{
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: blue;
+}

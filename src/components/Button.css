@@ -1,0 +1,23 @@
+
+.button {
+    margin-top: 50px;
+
+}
+
+.button button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #fefefe;
+    background-color: rgb(77, 46, 46);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.button__icon{
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+}

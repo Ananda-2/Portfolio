@@ -1,0 +1,9 @@
+
+.footer{
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+.footer h3{
+    font-family: 'poppins' , sans-serif;
+}
