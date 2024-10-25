@@ -74,6 +74,7 @@ body {
     text-align:center ;
     color: #646363;
     position: relative;
+    margin-bottom: 10px;
 }
 .heading::after{
     content: '';

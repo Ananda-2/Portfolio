@@ -1,0 +1,183 @@
+/* Qualification.css */
+.qualification {
+    max-width: 100vw;
+    padding: 5rem 2rem;
+    background: linear-gradient(11deg, rgba(229, 233, 232, 0.88) 0%, rgba(243, 240, 240, 0.88) 99%);
+}
+
+.qualification__header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.qualification__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d2e32;
+    margin-bottom: 0.75rem;
+}
+
+.qualification__subtitle {
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    margin-top: 48px;
+}
+
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.qualification__button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem; /* Changed for better readability */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(181, 179, 179);
+    font-weight: 500;
+}
+
+.qualification__button.active {
+    color: rgb(44, 41, 41);
+}
+
+.qualification__button span {
+    font-weight: 500;
+}
+
+.qualification__icon {
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.qualification__sections {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.qualification__sections::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 3000ms ease-out;
+    width: 2px;
+    height: 100%;
+    background-color: #b5b2b2;
+}
+
+.qualification__content {
+    display: none;
+}
+
+.qualification__content.active {
+    display: block;
+}
+
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.qualification__info {
+    position: relative;
+}
+
+.qualification__info--left {
+    text-align: right;
+}
+
+.qualification__info--right {
+    text-align: left;
+}
+
+.qualification__title-role {
+    color: #2d2e32;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.qualification__institution {
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+.qualification__calendar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #495969;
+    font-size: 1rem;
+}
+
+.qualification__calendar--left {
+    justify-content: flex-end;
+}
+
+.qualification__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #67696b;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 0.75rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .qualification__sections {
+        max-width: 90%; /* Updated to ensure it takes more space on smaller screens */
+    }
+
+    .qualification__sections::before {
+        left: 0;
+    }
+
+    .qualification__data {
+        grid-template-columns: 1fr; /* Stack items in single column */
+        margin-bottom: 2rem; /* Added margin for better spacing */
+    }
+
+    .qualification__info--left,
+    .qualification__info--right {
+        text-align: left;
+    }
+
+    .qualification__calendar--left {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .qualification__tabs {
+        flex-direction: column; /* Stack tabs vertically */
+        gap: 1rem; /* Reduced gap for smaller screens */
+    }
+
+    .qualification__button {
+        font-size: 1rem; /* Decrease button font size */
+    }
+
+    .qualification__data {
+        column-gap: 1rem; /* Reduced gap for smaller screens */
+    }
+
+    .qualification__title-role {
+        font-size: 1.2rem; /* Increased font size for better readability */
+    }
+}

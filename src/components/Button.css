@@ -1,23 +1,58 @@
-
+/* Button Container */
 .button {
-    margin-top: 50px;
-
+    text-align: center; /* Center-align buttons */
+    margin-top: 50px; /* Space above the button */
 }
 
-.button button{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    color: #fefefe;
-    background-color: rgb(77, 46, 46);
-    border-radius: 20px;
-    cursor: pointer;
-
+/* Button Styles */
+.button button {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 15px 25px; /* Vertical and horizontal padding */
+    color: #fefefe; /* Text color */
+    background-color: rgb(77, 46, 46); /* Button background color */
+    border-radius: 20px; /* Rounded corners */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 1rem; /* Font size for button text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
 }
 
-.button__icon{
-    height: 20px;
-    width: 20px;
-    margin-left: 15px;
+/* Button Hover Effects */
+.button button:hover {
+    background-color: rgb(100, 60, 60); /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Button Icon Styles */
+.button__icon {
+    height: 20px; /* Icon height */
+    width: 20px; /* Icon width */
+    margin-left: 10px; /* Space between text and icon */
+    transition: transform 0.2s ease; /* Transition for icon */
+}
+
+/* Icon Hover Effects */
+.button button:hover .button__icon {
+    transform: rotate(15deg); /* Rotate icon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .button button {
+        padding: 12px 20px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Smaller font size */
+        /* align-items: center;
+        justify-content: center; */
+        margin: auto;
+        
+    }
+
+    .button__icon {
+        height: 18px; /* Smaller icon size */
+        width: 18px; /* Smaller icon size */
+        margin-left: 8px; /* Less margin on smaller screens */
+        justify-content: center;
+    }
 }
