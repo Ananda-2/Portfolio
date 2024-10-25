@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <div className="HomePage" id="Home__page">
         <div className="textArea">
-          <h1> MERN Developer </h1>
+          <h1> Software Developer </h1>
           <p>
             {" "}
             Hi, I'm Ananda , A passionate Full Stack Web Developer based in
