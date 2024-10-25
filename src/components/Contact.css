@@ -121,7 +121,7 @@
 }
 
 .send__message__button {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 170px;
     margin-left: auto;
     margin-right: auto;
@@ -147,7 +147,7 @@
     }
 
     .send__message__button {
-        margin-top: 50px;
+        margin-top: 150px;
         width: 150px;
     }
 }

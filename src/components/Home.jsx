@@ -32,7 +32,12 @@ const Home = () => {
             </a>
           </div>
 
-          <Button name="Download CV" icon={faDownload} />
+          <a
+            href="https://drive.google.com/file/d/1lPBX_xy7tq5CLNuRqqSjYK--4MpR64M-/view?usp=drive_link"
+            target="_black"
+          >
+            <Button name="Download CV" icon={faDownload} />
+          </a>
         </div>
 
         <div className="photoArea">

@@ -8,37 +8,31 @@ const Qualification = () => {
   const educationData = [
     {
       title: "Computer Science",
-      institution: "MIT University",
-      location: "USA",
-      period: "2016 - 2020",
+      institution: "National Institute Of Technology",
+      location: "Durgapur",
+      period: "2021- 2025",
     },
     {
-      title: "Web Development",
-      institution: "Coding Bootcamp",
-      location: "Spain",
-      period: "2020 - 2021",
+      title: "Science",
+      institution: "Pathfinder HS Public School ",
+      location: "Kolkata",
+      period: "2019 - 2021",
     },
   ];
 
   const experienceData = [
     {
-      title: "Product Designer",
-      institution: "Microsoft",
-      location: "Spain",
-      period: "2021 - Present",
+      title: "AEH Intern",
+      institution: "Accenture",
+      location: "Bangaluru , India",
+      period: "May - July 2024",
     },
     {
-      title: "UX Designer",
-      institution: "Apple Inc",
-      location: "Spain",
-      period: "2020 - 2021",
-    },
-    {
-      title: "Web Designer",
-      institution: "Figma",
-      location: "Spain",
-      period: "2018 - 2020",
-    },
+      title: "Web Developer",
+      institution: "CSS , NIT Durgapur",
+      location: "Durgapur , India",
+      period: "2023",
+    }
   ];
 
   const renderQualification = (item, index, isLeft) => (
